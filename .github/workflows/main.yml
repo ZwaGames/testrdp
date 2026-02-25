@@ -14,7 +14,7 @@ jobs:
         run: |
           Invoke-WebRequest https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-windows-amd64.zip -OutFile ngrok.zip
           Expand-Archive ngrok.zip
-          .\ngrok\ngrok.exe config add-authtoken "3AAePsUlIPdcY8QA4tL93r8xP7x_2MB6nDNNMw692aCGmfFHZ"
+          .\ngrok\ngrok.exe config add-authtoken "3AAhlTtKn0wUOVyIjeeiWeuRoEZ_5AkQSwQ2kg1tEgBqohiCx"
           Start-Process -NoNewWindow -FilePath ".\ngrok\ngrok.exe" -ArgumentList "tcp --region eu 3389"
           Start-Sleep -Seconds 10
       - name: Get RDP Info
